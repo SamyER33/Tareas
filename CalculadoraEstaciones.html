@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Actividad - Unidad II</h1>
+    <h2>Programación Básica</h2>
+    <p>Por favor, haga clic al botón de abajo para comenzar.</p>
+    <button onclick="buttonOnClick()">Comenzar</button>
+    <p id="demo"></p>
+    <script>
+      function buttonOnClick() {
+        let texto = prompt("Ingrese el número de un mes");
+        if (texto != null) {
+          let mes = parseInt(texto);
+          if (isNaN(mes) || mes < 1 || mes > 12)
+          {
+            alert("Valor inválido");
+            return;
+          }
+          if (mes == 12 || mes == 1 || mes == 2)
+          {
+            alert("Es Invierno");
+          }
+          else if (mes == 3 || mes == 4 || mes == 5)
+          {
+            alert("Es Primavera");
+          }
+          else if (mes == 6 || mes == 7 || mes == 8)
+          {
+            alert("Es Verano");
+          }
+          else
+          {
+            alert("Es Otoño");
+          }
+          alert("Nombre: Brenda Samara Escobar Avila\nCarnet: 23005735");
+        }
+      }
+    </script>
+  </body>
+</html>
